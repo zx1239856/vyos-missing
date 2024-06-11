@@ -22,9 +22,9 @@
 // v1.300034.0 2024-03-15: commit id 2ad5e3a
 def pkgList = [
     ['name': "amazon-cloudwatch-agent",
-     'scmCommit': '2ad5e3a',
+     'scmCommit': 'v1.247358.0',
      'scmUrl': 'https://github.com/aws/amazon-cloudwatch-agent',
-     'buildCmd': "make prepackage package-deb"],
+     'buildCmd': "make clean test build package-deb"],
 ]
 
 // Start package build using library function from https://github.com/vyos/vyos-build
