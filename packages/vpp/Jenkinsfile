@@ -23,12 +23,9 @@
 // https://wiki.fd.io/view/VPP/Build,_install,_and_test_images#Build_A_VPP_Package
 def pkgList = [
     ['name': "vpp",
-     'scmCommit': 'v24.02',
+     'scmCommit': 'v23.06',
      'scmUrl': 'https://gerrit.fd.io/r/vpp',
-     'buildCmd': '''sudo apt-get update -y
-                    sudo apt-get install -y llvm clang
-                    export UNATTENDED=y
-                    make install-dep && make install-ext-deps && make pkg-deb'''],
+     'buildCmd': 'cd ..; ./build.sh'],
 ]
 
 // Start package build using library function from https://github.com/vyos/vyos-build
