@@ -23,7 +23,7 @@
 // https://wiki.fd.io/view/VPP/Build,_install,_and_test_images#Build_A_VPP_Package
 def pkgList = [
     ['name': "vpp",
-     'scmCommit': 'v23.06',
+     'scmCommit': 'v24.02',
      'scmUrl': 'https://gerrit.fd.io/r/vpp',
      'buildCmd': 'cd ..; ./build.sh'],
 ]
