@@ -1,0 +1,11 @@
+diff --git a/Tools/src/create_deb.sh b/Tools/src/create_deb.sh
+index 86c3c452..b2c1f3b6 100755
+--- a/Tools/src/create_deb.sh
++++ b/Tools/src/create_deb.sh
+@@ -89,5 +89,5 @@ ar r ${BUILD_ROOT}/bin/amazon-cloudwatch-agent-${AGENT_VERSION}-1.deb ${BUILD_RO
+ 
+ echo "Copying debian files to bin"
+ 
+-mv ${BUILD_ROOT}/bin/amazon-cloudwatch-agent-${AGENT_VERSION}-1.deb ${BUILD_SPACE}/bin/linux/${ARCH}/amazon-cloudwatch-agent.deb
++mv ${BUILD_ROOT}/bin/amazon-cloudwatch-agent-${AGENT_VERSION}-1.deb ${BUILD_SPACE}/bin/linux/${ARCH}/amazon-cloudwatch-agent_${AGENT_VERSION}-1_${ARCH}.deb
+ ls -ltr ${BUILD_SPACE}/bin/linux/${ARCH}/*.deb

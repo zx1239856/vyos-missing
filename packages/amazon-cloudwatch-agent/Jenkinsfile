@@ -26,7 +26,7 @@ def pkgList = [
     ['name': "amazon-cloudwatch-agent",
      'scmCommit': 'v1.247358.0',
      'scmUrl': 'https://github.com/aws/amazon-cloudwatch-agent',
-     'buildCmd': "make clean test build package-deb"],
+     'buildCmd': "cd ..; ./build.sh"],
 ]
 
 // Start package build using library function from https://github.com/vyos/vyos-build
